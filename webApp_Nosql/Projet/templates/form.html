@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>projet Nosql</title>
+    </head>
+
+    <body>
+        <form action='/new_entry' method="POST">
+            <label>Titre du film</label>
+            <input type="text" name="Titre" id="Titre">
+            <input type="submit" value="valider">
+        </form>
+        <p>{{error}}</p>
+        
+        <form action="find_movie" method="POST">
+            <label>Titre du film</label>
+            <input type="text" name="Titre" id="Titre">
+            <input type="submit" value="valider">
+        </form>
+        <!--{% for item in reponse %}-->
+        <p>{{reponse}}</p>
+        <!--{% endfor %} -->
+
+    </body>
+
+
+
+
+
+</html>
