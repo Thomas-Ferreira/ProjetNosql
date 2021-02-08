@@ -59,7 +59,9 @@ def find_movie():
         
         items = list(films.find({"Title":movie_title}))
 
-    return render_template("form.html", reponse=items)
+        reponse = {items[1]}
+
+    return render_template("form.html", reponse=reponse)
 
 if __name__ == '__main__':
     app.run(debug=True)
